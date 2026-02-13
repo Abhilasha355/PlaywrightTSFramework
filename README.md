@@ -1,4 +1,3 @@
-
 What is the playwright? 
 
 What is the playwright Advantage and Limitation 
@@ -61,7 +60,7 @@ Hooks
 
 Add Screenshots to HTML Report when Failed 
 
-====================================================================== 
+==================================================================== 
 
 What is Playwright? 
 
@@ -725,6 +724,148 @@ Test Traces, Actions metadata, Console, Log, Network:
 
  
 
+Retry, Repeat, Visual Testing and Parallelism: 
+
+Annotation- 
+
+skip Test 
+
+skip the test, run other test in the suite 
+
+ 
+
+ 
+
+Only: 
+
+to run only that particular test 
+
+ 
+
+Grouping Tests: 
+
+ 
+
+Tag Test: 
+
+ 
+
+PS C:\Users\I8046\OneDrive - Indium Software India Private Limited\Documents\DemoProject> npx playwright test --grep "@smoke" 
+
+ 
+
+ 
+
+Repeat: 
+
+npx playwright test –repeat-each=5 
+
+this command will run the test 5 times 
+
+Retry: 
+
+npx playwright test –retries=2 
+
+ 
+
+Parallelism/Parallel Test Execution: 
+
+npx playwright test group.spec.ts --workers 3 
+
+Parametrize Tests: 
+
+Create a const test Parameters 
+
+Create a for loop to iterate to each value in test  
+
+Replace the value with Parameter variable  
+
+ 
+
+Visual Comparison -Visual Testing: 
+
+Compare the screen shot anywhere in the script with the visual comparison  
+
+ 
+
+ 
+
+Page Object model, Video, Environments, Data Driven Testing: 
+
+Env File: 
+
+ 
+
+ 
+
+Data Driven Testing : 
+
+Data Driven Testing Using JSON File: 
+
+ 
+
+ 
+
+ 
+
+Data Driven Testing Using CSV File: 
+
+ 
+
+ 
+
+Run Tests on Multiple Environments-QA, STAGE, PROD etc: 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Implementing Page Object Model in playwright: 
+
+Why POM (Page Object Model)? 
+
+Page Object Model is a design pattern to create object repository for web page elements 
+
+For each web Page there is a corresponding page class 
+
+Page class contains all the web Page elements of that page, and it contains page methods which perform operations on those web elements 
+
+ 
+
+Advantages: 
+
+Code will be cleaner and Easier to understand 
+
+Object repository is independent of test scripts 
+
+Test Scripts will be optimized because of Elements respective abstraction methods in page classes 
+
+ 
+
+Disadvantages: 
+
+ 
+
+Time and Effort 
+
+Specific to Project 
+
+ 
+
+ 
+
+ 
+
+Video Recording Full Screen Browser: 
+
+ 
+
+ 
+
  
 
  
@@ -733,7 +874,7 @@ Test Traces, Actions metadata, Console, Log, Network:
 
 Actions | Playwright 
 
- 
+https://devdocs.io/playwright/ 
 
 Repo Link: 
 
