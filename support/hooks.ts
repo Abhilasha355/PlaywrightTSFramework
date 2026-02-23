@@ -1,17 +1,17 @@
 // support/hooks.ts
 import { After, Before, setDefaultTimeout } from "@cucumber/cucumber";
 import { chromium } from "playwright";
-// import type { TestWorld } from "./world";
+import type { TestWorld } from "../support/world";
 
 setDefaultTimeout(60_000);
 
-Before(async function () {
+Before(async function (this: TestWorld) {
   this.browser = await chromium.launch({ headless: true });
   this.context = await this.browser.newContext();
   this.page = await this.context.newPage();
 });
 
-After(async function (, scenario) {
+After(async function (this: TestWorld, scenario) {
   if (scenario.result?.status === "FAILED") {
     const screenshot = await this.page.screenshot({ fullPage: true });
     // Attach screenshot to Cucumber report if using compatible formatter
