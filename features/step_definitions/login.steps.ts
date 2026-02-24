@@ -2,7 +2,7 @@
 import { Given, When, Then } from "@cucumber/cucumber";
 import { expect } from "@playwright/test";
 import type { TestWorld } from "../../support/world";
-import { LoginPage } from "../../Pages/loginpage"; // ensure named export
+import { LoginPage } from "../../pages/loginpage"; // ensure named export
 
 Given( "I navigated to login page with valid URL",  async function (this: TestWorld) {
     // Use the shared Playwright page from your World/hooks
