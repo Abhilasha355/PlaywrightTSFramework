@@ -9,7 +9,7 @@ test("Query Parameter in bookingAPI request using Playwright", async ({ request 
     JSON.stringify(BookingDynamicAPIRequestBody1),
     "sita",           // {0}
     "kumari",         // {1}
-    "lApple Mobile Pls"   // {2}
+    "Apple Mobile"   // {2}
   );
 
   // 2) Parse the string back to an object (if your endpoint expects JSON)
